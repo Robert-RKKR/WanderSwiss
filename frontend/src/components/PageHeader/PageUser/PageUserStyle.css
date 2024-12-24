@@ -1,0 +1,18 @@
+/* Page user */
+.page-header-user {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-right: calc(var(--space-primary) * 3);
+}
+
+.page-header-user svg {
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 769px) {
+    .page-header-user {
+        margin-right: 0px;
+    }
+}

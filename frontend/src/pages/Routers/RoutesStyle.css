@@ -1,0 +1,136 @@
+/* General - Container */
+[class^="card-container"] {
+    gap: var(--space-secondary);
+    margin-bottom: var(--space-primary);
+}
+
+.card-section {
+    display: flex;
+}
+
+/* General - Grid container */
+.card-container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-full {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-half {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-mediun {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* General - Flex container */
+.card-container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Search - Search bar */
+.card-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-search > .card-section {
+    height: 50px;
+}
+
+/* Search - Input */
+.card-search input {
+    width: 100%;
+    border: none;
+    padding: 0px var(--space-secondary);
+    background-color: var(--color-background-light-secondary);
+    font-size: 0.9em; 
+}
+
+.card-search > .card-input {
+    flex: 1;
+}
+
+.card-search-button {
+    padding: 0px var(--space-secondary);
+    height: 100%;
+    border: none;
+    background-color: var(--color-page-secondary);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Search - Icons */
+.card-search-icon svg {
+    cursor: pointer;
+    padding: 0px var(--space-secondary);
+    height: 100%;
+    fill: var(--color-dark-text-primary);
+    background-color: var(--color-page-secondary);
+}
+
+.card-icons-left > .card-search-icon:first-child svg {
+    border-radius: var(--radius-primary) 0px 0px var(--radius-primary);
+    padding-right: 0px;
+}
+
+.card-icons-right > .card-search-icon:last-child svg {
+    border-radius: 0px var(--radius-primary) var(--radius-primary) 0px;
+    padding-left: 0px;
+}
+
+/* Search - Filters */
+.card-filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-secondary);
+    margin-bottom: var(--space-secondary);
+}
+
+.card-filter:last-child {
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1026px) {
+    .card-filter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .card-filter {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Filters - Slider */
+.filter-slider[type="range"] {
+    color: var(--color-page-secondary);
+}
+
+.card-filter-slider {
+    margin-bottom: 20px;
+}

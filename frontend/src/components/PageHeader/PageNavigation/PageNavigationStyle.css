@@ -1,0 +1,30 @@
+/* Page navigation */
+.page-header-nav {
+    height: var(--space-header);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-right: var(--space-primary);
+}
+
+.page-header-nav > ul {
+    display: flex;
+    gap: var(--space-primary);
+    font-weight: bold;
+}
+
+.page-header-nav a {
+    color: var(--color-dark-text-heading);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 481px) {
+    .page-header-section {
+        flex-direction: column;
+    }
+
+    .page-header-nav > ul {
+        flex-direction: column;
+    }
+}

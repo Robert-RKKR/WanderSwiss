@@ -1,0 +1,25 @@
+/* Page logo */
+.page-header-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: calc(var(--space-primary) * 3);
+}
+
+@media only screen and (max-width: 769px) {
+    .page-header-logo {
+        margin-left: 0px;
+    }
+}
+
+.page-header-logo svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--color-dark-text-heading);
+    transition: fill var(--time-transition-primary) ease;
+}
+
+.page-header-logo svg:hover {
+    fill: var(--color-page-primary);
+    transition-delay: var(--time-delay-primary);
+}

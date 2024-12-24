@@ -1,0 +1,36 @@
+/* CSS Variables */
+.non-border {
+    border: 0px!important;
+}
+
+.non-background {
+    background: none!important;
+}
+
+.non-display {
+    display: none!important;
+}
+
+.non-padding {
+    padding: 0px!important;
+}
+
+/* Default text color */
+p, q, h1, h2, h3, h4, h5, h6, a, li {
+    font-family: 'FunnelSans', Helvetica, Arial, sans-serif;
+    color: var(--color-light-text-primary);
+    font-size: 1rem;
+}
+a:active, a:visited {
+    color: var(--color-light-text-primary);
+}
+
+/* Default link hover animation */
+a {
+    transition: color var(--time-transition-primary) ease!important;
+}
+
+a:hover {
+    color: var(--color-page-primary)!important;
+    transition-delay: var(--time-delay-primary)!important;
+}

@@ -1,0 +1,186 @@
+/* General - Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--radius-primary);
+    box-shadow: var(--shadows-primary);
+    background-color: var(--color-background-light-secondary);
+}
+
+.card-padding {
+    padding: var(--space-secondary);
+}
+
+/* General - Header */
+.card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--border-primary);
+}
+
+.card-header svg {
+    color: var(--color-light-text-primary);
+}
+
+.card-header h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-header-photo {
+    border-bottom: 0px;
+}
+
+.card-header-photo img {
+    object-fit: cover;
+    border-radius: var(--radius-primary) var(--radius-primary) 0px 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.card-img-top-loading {
+    margin-right: 45%;
+}
+
+.card-img-top-loading svg {
+    fill: var(--color-page-secondary);
+}
+
+@media only screen and (max-width: 481px) {
+    .card-header-photo img {
+        height: 250px;
+    }
+}
+
+[class^="card-header-icons"] {
+    position: absolute;
+    visibility: visible;
+    padding: 8px;
+    background-color: var(--color-dark-text-heading);
+}
+
+.card-header-icons-left {
+    left: 0px;
+    top: 0px;
+    border-radius: var(--radius-primary) 0px 0px 0px;
+}
+
+.card-header-icons-right {
+    right: 0px;
+    top: 0px;
+    border-radius: 0px var(--radius-primary) 0px 0px;
+}
+
+.card-header-icon {
+    cursor: pointer;
+    padding-right: 8px;
+    width: 25px;
+    height: 25px;
+}
+
+.card-header-icon:last-child {
+    padding-right: 0px;
+}
+
+.card-header-icons-hidden {
+    display: none;
+}
+
+.card:hover .card-header-icons-hidden {
+    display: flex;
+}
+
+@media only screen and (max-width: 481px) {
+    .card-header-icon {
+        padding-right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* General - Body */
+.card-body {
+    height: 100%;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.card-body-section {
+    flex-direction: column;
+}
+
+/* General - Footer */
+.card-footer {
+    justify-content: space-between;
+    border-top: var(--border-primary);
+}
+
+.card-footer-section {
+    gap: 5px;
+}
+
+/* Card dedicated - List */
+.card-body-title {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-body-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: var(--border-primary);
+}
+
+.card-body-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+/* Card dedicated - Wiki */
+.card-body-wiki {
+    line-height: 1.6;
+}
+
+.card-body-wiki h3, h4, h5, h6 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.card-body-wiki b {
+    font-weight: bold;
+}
+
+.card-body-wiki i {
+    font-style: italic;
+}
+
+.card-body-wiki q {
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+}
+
+.card-body-wiki q::before {
+    content: open-quote;
+}
+
+.card-body-wiki q::after {
+    content: close-quote;
+}
+
+.card-body-wiki blockquote {
+    margin: 15px 0;
+    padding-left: 15px;
+    border-left: 4px solid var(--color-light-text-disabled);
+    color: var(--color-light-text-secondary);
+    font-style: italic;
+}
+
+.card-body-wiki a {
+    color: var(--color-page-secondary);
+}

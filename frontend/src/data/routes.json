@@ -1,0 +1,72 @@
+[
+    {
+    "id": 1,
+    "cardHeader": {
+        "image": [
+        "media/photos/AdobeStock_800720744.jpeg"
+        ]
+    },
+    "cardBody": {
+        "list": [
+        {"title": "Super Zug Hike"},
+        {"title": "Duration: 8h"},
+        {"title": "Distance: 43 Km"},
+        {"title": "Ascension: 2345 M"},
+        {"title": "Start Point: Steinhausen"},
+        {"title": "End Point: Arth-Goldau"},
+        {"title": "Type: Hiking"},
+        {"title": "Best Seasons: Summer"},
+        {"title": "Standard Difficulty: Moderate"},
+        {"title": "Route Score: 4.5"}
+        ]
+    },
+    "cardFooter": [
+        [
+        "media/routes/flower.svg",
+        "media/routes/four.svg"
+        ],
+        [
+        "media/routes/star.svg",
+        "media/routes/star.svg",
+        "media/routes/star.svg",
+        "media/routes/no-star.svg",
+        "media/routes/no-star.svg"
+        ]
+    ]
+    },
+    {
+    "id": 2,
+    "cardHeader": {
+        "image": [
+        "media/photos/mountain.jpg"
+        ]
+    },
+    "cardBody": {
+        "list": [
+        {"title": "Mountain Adventure"},
+        {"title": "Duration: 6h"},
+        {"title": "Distance: 25 Km"},
+        {"title": "Ascension: 1200 M"},
+        {"title": "Start Point: Base Camp"},
+        {"title": "End Point: Mountain Peak"},
+        {"title": "Type: Climbing"},
+        {"title": "Best Seasons: Spring"},
+        {"title": "Standard Difficulty: Challenging"},
+        {"title": "Route Score: 4.8"}
+        ]
+    },
+    "cardFooter": [
+        [
+            "media/routes/flower.svg",
+            "media/routes/four.svg"
+        ],
+        [
+            "media/routes/star.svg",
+            "media/routes/star.svg",
+            "media/routes/star.svg",
+            "media/routes/star.svg",
+            "media/routes/no-star.svg"
+        ]
+    ]
+    }
+]
