@@ -112,7 +112,7 @@
     "start_poi": "Zug",
     "end_poi": "Arth-Goldau",
     "route_score": 5,
-    "type": "runing",
+    "type": "running",
     "best_seasons": "spring",
     "image": "media/photos/8.jpeg"
   },
@@ -138,7 +138,7 @@
     "start_poi": "Brienz",
     "end_poi": "Rothorn",
     "route_score": 4,
-    "type": "runing",
+    "type": "running",
     "best_seasons": "fall",
     "image": "media/photos/10.jpeg"
   },
@@ -255,7 +255,7 @@
     "start_poi": "Wassen",
     "end_poi": "Steingletscher",
     "route_score": 5,
-    "type": "runing",
+    "type": "running",
     "best_seasons": "summer",
     "image": "media/photos/19.jpeg"
   }
